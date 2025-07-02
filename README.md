@@ -103,8 +103,4 @@ Run the script with the required arguments:
 
 ## License
 
-MIT License
-
----
-
-If you want me to generate any additional info or examples for the README or the scripts themselves, just say!
+This script is provided as-is, without warranty. Use at your own risk.
