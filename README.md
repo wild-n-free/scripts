@@ -22,6 +22,7 @@ This repository contains several Bash scripts to manage AWS resources across you
 | `delete-s3-buckets.sh`   | Deletes all S3 buckets under a profile (buckets must be empty). | `--profile <profile>`                 |
 | `delete-sqs-queues.sh`   | Deletes all SQS queues except those filtered out by patterns. | `--profile <profile>`                 |
 | `empty-s3-buckets.sh`    | Empties (deletes all objects) in all S3 buckets under a profile. | `--profile <profile>`                 |
+| `list_ebs_snapshots.sh`  | List Amazon EBS snapshots filtered by a specific tag key-value pair | `<aws-profile>` `<tag-key>` `<tag-value>` |
 
 ---
 
@@ -75,6 +76,13 @@ Run the script with the required arguments:
 
 ---
 
+### 6. List Amazon EBS snapshots filtered by a specific tag key-value pair
+
+```bash
+./list_snapshots.sh <tag-key> <tag-value> <aws-profile>
+```
+
+---
 ## Notes
 
 - **Always use caution**: these scripts perform destructive operations on your AWS resources.
